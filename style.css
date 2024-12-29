@@ -1,0 +1,90 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    text-align: center;
+  }
+
+a {
+    text-decoration: none; /* Убирает подчеркивание */
+    color: #000000;
+}
+
+.header button{
+   width: 50%;
+   height: 8vh;
+   margin: 30px;
+   background-color: #b74b4b;
+   color: white;
+   border: none;
+   outline: none;
+   font-size: 120%;
+   font-weight: 700;
+   border-radius: 5px;
+   transition: 0.2s linear;
+}
+.header button:hover{
+    scale: 1.1;
+    color: #b74b4b;
+    border: 2px solid #b74b4b;
+    background-color: transparent;font-weight: 700;
+    box-shadow: 0 0 40px #b74b4b;
+}
+
+#playButton {
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#playButton:hover {
+    background-color: #3700b3;
+    transform: scale(1.05);
+}
+
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #1e1e1e; /* Темный фон */
+}
+
+/* Стили для снежинок */
+.snowflake {
+    position: absolute;
+    top: -10px;
+    color: white;
+    font-size: 20px;
+    user-select: none;
+    pointer-events: none;
+    opacity: 0.8;
+    animation: fall linear infinite;
+}
+
+/* Анимация для снега */
+@keyframes fall {
+    0% {
+        transform: translateY(0) translateX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) translateX(var(--x));
+        opacity: 0;
+    }
+}

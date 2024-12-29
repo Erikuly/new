@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Erik.css">
+    <title>Erik</title>
+</head>
+<body>
+    <header>
+        <div class="main-container" id="home">
+            <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+                <img src="Papa.jpg" alt="">
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">С Новым годом <span>Папуль</span></h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">
+                    С Новым годом! Пусть этот год принесёт тебе крепкое здоровье, 
+                    радость и побольше счастливых моментов. Ты всегда был для меня опорой и примером силы, мудрости и заботы.<br>
+                    Я хочу поблагодарить тебя за всё, что ты делаешь для нашей семьи, за твою поддержку и терпение. <br>
+                    Также я хочу попросить прощения за те моменты, когда я доставлял тебе переживания или огорчения.
+                    Мне искренне жаль за это, и я буду стараться быть лучше и внимательнее.<br>
+                    Пусть в этом году все твои мечты сбудутся, пусть трудности обходят стороной, 
+                    а счастье и тепло всегда живут в твоём сердце. Ты для меня самый важный человек, и я очень тебя люблю.<br>
+                    
+                    С уважением и любовью,
+                    [Ваш сын]</div>
+               
+                
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <button id="playButton">Воспроизвести музыку</button>
+
+  <!-- Аудио -->
+  <audio id="audioPlayer" src="Потап и Настя - Папа Вам Не Мама.mp3"></audio>
+
+  <script>
+    // Получаем элементы
+    const button = document.getElementById('playButton');
+    const audio = document.getElementById('audioPlayer');
+
+    // Обработчик нажатия
+    button.addEventListener('click', () => {
+      if (audio.paused) {
+        audio.play(); // Воспроизвести музыку
+        button.textContent = 'Пауза'; // Изменяем текст кнопки
+      } else {
+        audio.pause(); // Поставить на паузу
+        button.textContent = 'Воспроизвести музыку'; // Изменяем текст кнопки
+      }
+    });
+  </script>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

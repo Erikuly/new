@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="Zulfia.css">
+            <title>Zulfia</title>
+        </head>
+        <body>
+            <header>
+                <div class="main-container" id="home">
+                    <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+                        <img src="Mama.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">С Новым годом <span>Мамуль</span></h1>
+                        <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">
+                            Дорогая мамочка,<br>
+
+                            С Новым годом! Пусть этот год принесет тебе океан радости, любви и гармонии. Ты — мой главный источник вдохновения, силы и нежности. Ты всегда была для меня опорой, и твоя забота и мудрость бесценны.<br>
+                            
+                            Спасибо тебе за всю твою любовь, терпение и поддержку. Ты — невероятный человек, и я горжусь тем, что могу быть твоим ребенком. Прошу прощения за все те моменты, когда я причинял тебе беспокойство или огорчения. Мне искренне жаль, и я буду стараться быть лучше.<br>
+                            
+                            Пусть в новом году сбудется все, о чем ты мечтаешь, а твое сердце всегда будет наполнено радостью и теплом. Ты — самый важный человек в моей жизни, и я очень тебя люблю.<br>
+                            
+                            С любовью и благодарностью,<br>
+                            [Ваш сын]</div>
+                       
+                        
+                    </div>
+                </div>
+            </header>
+        
+            <section>
+                <button id="playButton">Воспроизвести музыку</button>
+        
+          <!-- Аудио -->
+          <audio id="audioPlayer" src="Руки Вверх - 18 Мне Уже.mp3"></audio>
+        
+          <script>
+            // Получаем элементы
+            const button = document.getElementById('playButton');
+            const audio = document.getElementById('audioPlayer');
+        
+            // Обработчик нажатия
+            button.addEventListener('click', () => {
+              if (audio.paused) {
+                audio.play(); // Воспроизвести музыку
+                button.textContent = 'Пауза'; // Изменяем текст кнопки
+              } else {
+                audio.pause(); // Поставить на паузу
+                button.textContent = 'Воспроизвести музыку'; // Изменяем текст кнопки
+              }
+            });
+          </script>
+            </section>
+
+            <script src="script.js"></script>
+        </body>
+        </html>

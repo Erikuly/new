@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Erik.css">
+    <title>Dana</title>
+</head>
+<body>
+    <header>
+        <div class="main-container" id="home">
+            <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+                <img src="Dana.jpg" alt="">
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">С Новым годом <span>Данчот</span></h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">
+                    Моя дорогая сестренка!<br>
+                    С Новым годом! Пусть этот год принесет тебе много ярких моментов, веселья и удачи! Ты — невероятно талантливая, умная и веселая, и я горжусь, что ты моя сестра. Пусть в новом году сбудется всё, о чём ты мечтаешь!<br>
+                    <br>
+                    Спасибо тебе за твою искренность, за смех и радость, которые ты даришь нашей семье. Пусть в этом году тебя окружают только добрые люди, а твоя жизнь будет наполнена счастливыми моментами и смехом.<br>
+                    <br>
+                    Желаю тебе много новых приключений, побед и приятных сюрпризов. Ты заслуживаешь всего самого лучшего!<br>
+                    <br>
+                    С любовью,<br>
+                    [Твой брат]</div>
+               
+                
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <button id="playButton">Воспроизвести музыку</button>
+
+  <!-- Аудио -->
+  <audio id="audioPlayer" src="Диета kz тобы - Че там карындас.mp3"></audio>
+
+  <script>
+    // Получаем элементы
+    const button = document.getElementById('playButton');
+    const audio = document.getElementById('audioPlayer');
+
+    // Обработчик нажатия
+    button.addEventListener('click', () => {
+      if (audio.paused) {
+        audio.play(); // Воспроизвести музыку
+        button.textContent = 'Пауза'; // Изменяем текст кнопки
+      } else {
+        audio.pause(); // Поставить на паузу
+        button.textContent = 'Воспроизвести музыку'; // Изменяем текст кнопки
+      }
+    });
+  </script>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

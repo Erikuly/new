@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>menu</title>
+</head>
+<body>
+
+   
+
+    
+    <header class="header">
+        <div class="head">
+            <h1>Нажмите на свое имя</h1>
+        </div>
+        <div class="btn">
+            <button><a href="Erik.html">Муханов Ерик</a></button>
+        </div>
+        <div class="btn">
+            <button><a href="Zulfia.html">Смагулова Зульфия</a></button>
+        </div>
+        <div class="btn">
+            <button><a href="Dana.html">Ескендир Дана</a></button>
+        </div>
+    </header>
+
+
+    <button id="playButton">Воспроизвести музыку</button>
+
+    <!-- Аудио -->
+    <audio id="audioPlayer">
+        <source src="Wham! - Last Christmas (OST Отпуск По Обмену).mp3" type="audio/mp3">
+        Ваш браузер не поддерживает элемент audio.
+    </audio>
+
+    <script>
+        // Получаем элементы
+        const button = document.getElementById('playButton');
+        const audio = document.getElementById('audioPlayer');
+
+        // Обработчик нажатия на кнопку
+        button.addEventListener('click', () => {
+            if (audio.paused) {
+                audio.play();  // Воспроизведение музыки
+                button.textContent = 'Пауза';  // Изменение текста кнопки
+            } else {
+                audio.pause();  // Пауза
+                button.textContent = 'Воспроизвести музыку';  // Изменение текста кнопки
+            }
+        });
+    </script>
+
+    <script src="script.js"></script>
+</html>
